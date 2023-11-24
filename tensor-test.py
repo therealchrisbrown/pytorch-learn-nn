@@ -3,6 +3,8 @@ import math
 
 dtype = torch.float
 device = torch.device("cpu")
+# device = torch.device("cuda:0") ## need to be downloaded from nvidia -  no longer support on macOS
+# https://developer.nvidia.com/nvidia-cuda-toolkit-developer-tools-mac-hosts
 
 x = torch.linspace(-math.pi, math.pi, 2000, device=device, dtype=dtype)
 y = torch.sin(x)
